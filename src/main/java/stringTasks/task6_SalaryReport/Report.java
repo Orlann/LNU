@@ -1,6 +1,5 @@
 package stringTasks.task6_SalaryReport;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 
 public class Report {
     public static void generateReport(Employee[] employees){
