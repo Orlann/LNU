@@ -1,4 +1,4 @@
-package stringTasks;
+package main.java.stringTasks;
 
 import java.util.Arrays;
 import java.util.regex.Matcher;
@@ -12,8 +12,8 @@ public class Task7_AllSubstring {
     }
 
     public static void findAllJava(String string) {
-//        Pattern pattern = Pattern.compile("Java ([0-9][0-9]*)");    // ПРАЦЮЄ
-        Pattern pattern = Pattern.compile("Java \\w*");       // ПРАЦЮЄ
+        Pattern pattern = Pattern.compile("Java ([0-9]*)");    // ПРАЦЮЄ
+//        Pattern pattern = Pattern.compile("Java \\w*");       // ПРАЦЮЄ
 //        Pattern pattern = Pattern.compile("Java (\\w*)");      // ПРАЦЮЄ
         Matcher matcher = pattern.matcher(string);
         while (matcher.find())
