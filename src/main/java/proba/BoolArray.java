@@ -1,53 +1,31 @@
-package proba;
+package main.java.proba;
 
 public class BoolArray
 
 {
-
     public static void aMethod() throws Exception
 
     {
-
         try /* Line 5 */
-
         {
-
             throw new Exception(); /* Line 7 */
 
-        }
-
-        finally /* Line 9 */
+        } finally /* Line 9 */
 
         {
-
             System.out.print("finally "); /* Line 11 */
-
         }
-
     }
 
     public static void main(String args[])
-
     {
-
-        try
-
+        try {
+            aMethod();}
+            catch (Exception e) /* Line 20 */
         {
-
-            aMethod();
-
-        }
-
-        catch (Exception e) /* Line 20 */
-
-        {
-
             System.out.print("exception ");
-
         }
 
         System.out.print("finished"); /* Line 24 */
-
     }
-
 }

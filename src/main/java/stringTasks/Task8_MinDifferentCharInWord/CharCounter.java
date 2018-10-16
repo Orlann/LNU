@@ -1,7 +1,7 @@
-package stringTasks.Task8_MinDifferentCharInWord;
+package main.java.stringTasks.Task8_MinDifferentCharInWord;
 
 
-import org.apache.commons.lang3.StringUtils;
+//import org.apache.commons.lang3.StringUtils;
 
 public class CharCounter {
     public static long countUniqueCharacters(String input) {

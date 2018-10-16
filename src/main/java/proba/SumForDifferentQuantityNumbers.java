@@ -1,6 +1,6 @@
-package proba;
+package main.java.proba;
 
-public class sumForDifferentQuantityNumbers {
+public class SumForDifferentQuantityNumbers {
 
     public static void main(String[] args) {
         sum(1,2);
