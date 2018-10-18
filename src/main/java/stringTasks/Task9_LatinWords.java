@@ -28,6 +28,33 @@ public class Task9_LatinWords {
     }
 
     public static void main(String[] args) {
-        findAllLatinWords(TEXT);
+
+//        findAllLatinWords(TEXT);
+
+            String string = "One two three раз два три one1 two2 123";
+            int count = 0;
+            String[] word1 = string.split(" ");
+
+            for (int Positionofword = 0; Positionofword < word1.length; Positionofword++) {
+                boolean isLatinwords = true;
+                char[] word = word1[Positionofword].toCharArray();
+//            System.out.println(word);
+
+                for (char element : word) {
+
+                    if (!(element >= 'a' && element <= 'z') && !(element >= 'A' && element <= 'Z')) {
+                        isLatinwords = false;
+                        break;
+                    }
+                }
+
+                if (isLatinwords) {
+                    count++;
+                     System.out.println(word);
+                }
+            }
+            System.out.println("К-сть слів = " + count);
+        }
+
     }
-}
+
